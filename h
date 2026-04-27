@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FreewayCrew | Dance Crew Chennai</title>
+
+<meta name="description" content="FreewayCrew dance group in Chennai. Book us for weddings, college events, and shows.">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 80px 20px;
+  background: linear-gradient(45deg,#ff0057,#00f2ff);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 15px;
+  background: #ff0057;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+iframe {
+  border-radius: 15px;
+}
+
+footer {
+  background: #111;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>FreewayCrew</h1>
+  <p>All Styles. One Crew. Unlimited Energy 🔥</p>
+
+  <a href="https://wa.me/919094027062" class="btn">
+    Book on WhatsApp
+  </a>
+</header>
+
+<section>
+  <h2>🔥 Our Performance</h2>
+
+  <iframe width="100%" height="350"
+  src="https://www.youtube.com/embed/T6wmOkYZxYo"
+  allowfullscreen></iframe>
+</section>
+
+<section>
+  <h2>About Us</h2>
+  <p>
+    FreewayCrew is a Chennai-based dance crew performing hip-hop,
+    freestyle, fusion and more. We bring high-energy performances
+    to weddings, college fests, and events.
+  </p>
+</section>
+
+<section>
+  <h2>Our Team</h2>
+
+  <img src="team1.jpg">
+  <img src="team2.jpg">
+  <img src="team3.jpg">
+</section>
+
+<section>
+  <h2>Our Mentor</h2>
+
+  <img src="mentor.jpg">
+  <p>Our mentor guides FreewayCrew with passion and experience.</p>
+</section>
+
+<section>
+  <h2>🔥 Our Vibe</h2>
+  <p>“ஆடுவது எங்கள் உயிர், மேடை எங்கள் உலகம்”</p>
+  <p>“நடனமே எங்கள் மொழி”</p>
+  <p>“Beat வந்தா FreewayCrew வந்துடும்!”</p>
+</section>
+
+<section>
+  <h2>📩 Quick Booking</h2>
+
+  <form onsubmit="sendToWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required><br>
+    <input type="text" id="event" placeholder="Event Type" required><br>
+    <input type="date" id="date" required><br>
+    <input type="text" id="location" placeholder="Location" required><br>
+    <br>
+    <button type="submit">Send Booking</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 FreewayCrew | Chennai</p>
+</footer>
+
+<a href="https://wa.me/919094027062"
+style="position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;
+padding:15px;border-radius:50%;
+text-decoration:none;font-size:20px;">
+💬
+</a>
+
+<script>
+function sendToWhatsApp() {
+  var name = document.getElementById("name").value;
+  var event = document.getElementById("event").value;
+  var date = document.getElementById("date").value;
+  var location = document.getElementById("location").value;
+
+  var message = `Hi FreewayCrew!
+Name: ${name}
+Event: ${event}
+Date: ${date}
+Location: ${location}`;
+
+  var url = "https://wa.me/919094027062?text=" + encodeURIComponent(message);
+  window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
